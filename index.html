@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="clock">00:00:00</div>
+
+    <form id="login-form" class="hidden">
+        <label for="login-name">Hello, what's your name?</label><br />
+        <input type="text" name="login-name" id="login-name" autocomplete="off">
+        <button class="hidden">Continue</button>
+    </form>
+    <div id="greetings" class="hidden"></div>
+
+    <form id="todo-form">
+        <label for="todos">What is your main focus for today?</label><br />
+        <input type="text" name="todos" id="todos" autocomplete="off" required />
+
+    </form>
+    <ul id="todo-list"></ul>
+
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
